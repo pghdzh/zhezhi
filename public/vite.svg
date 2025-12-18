@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">折枝 · Favicon</title>
+  <desc id="desc">宣纸底，墨色枝条，青色叶片与朱砂点缀的折枝风格图标。</desc>
+
+  <!-- 背景（宣纸圆形） -->
+  <defs>
+    <linearGradient id="gPaper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fcf9f2"/>
+      <stop offset="1" stop-color="#efe6d0"/>
+    </linearGradient>
+    <filter id="softShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- 圆形纸底 -->
+  <circle cx="32" cy="32" r="30" fill="url(#gPaper)" stroke="rgba(0,0,0,0.06)" stroke-width="1" />
+
+  <!-- 轻微阴影提升层次 -->
+  <g filter="url(#softShadow)" opacity="0.98">
+    <!-- 墨色枝条 -->
+    <path d="M10 40 C18 26, 30 22, 42 26 C50 29, 54 30, 56 28"
+          fill="none"
+          stroke="#162022"
+          stroke-width="4.6"
+          stroke-linecap="round"
+          stroke-linejoin="round" />
+
+    <!-- 叶片组（青色） -->
+    <g transform="translate(28,18) rotate(-18)">
+      <path d="M6 3 C2 -4, -6 -4, -8 2 C-9.5 6, -3.5 10, 6 8 C12 6,10 2,6 3 Z"
+            fill="#2e8aa3" opacity="0.98" />
+      <path d="M8 8 C4 2, -2 2, -4 7 C-5.8 11, 2 14, 10 12 C15 11,12 9,8 8 Z"
+            fill="#7fd3ff" opacity="0.16" />
+    </g>
+
+    <!-- 小叶（偏右） -->
+    <g transform="translate(44,26) rotate(8)">
+      <path d="M3 2 C0 -3, -4 -2, -5 2 C-5.8 5, -1.2 7, 4 6 C7 5.2,5 3,3 2 Z"
+            fill="#2e8aa3" opacity="0.98" />
+    </g>
+
+    <!-- 朱砂印（小圆点） -->
+    <circle cx="48" cy="12" r="4.6" fill="#e56474" stroke="rgba(255,255,255,0.14)" stroke-width="0.4"/>
+
+    <!-- 细微飞白（装饰） -->
+    <path d="M20 36 Q28 30 36 31" stroke="rgba(255,255,255,0.18)" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.9"/>
+  </g>
+</svg>
