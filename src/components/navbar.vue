@@ -30,7 +30,7 @@
       </RouterLink>
 
       <a
-        href="http://36.150.237.25/#/redirector"
+        href="https://slty.site/#/redirector"
         target="_blank"
         rel="noopener"
         class="nav-item"
